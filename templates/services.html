@@ -1,0 +1,911 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>InspiredRoom - Interior and Architecture Design PDEU</title>
+    <!-- Stylesheets -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    <link
+      href="{% static 'css/settings.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- REVOLUTION SETTINGS STYLES -->
+    <link
+      href="{% static 'css/layers.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link
+      href="{% static 'css/navigation.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- REVOLUTION NAVIGATION STYLES -->
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+
+    <!--Color Switcher Mockup-->
+    <link
+      href="{% static 'css/color-switcher-design.css' %}"
+      rel="stylesheet"
+    />
+
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet" />
+
+    <link href="{% static 'css/hover.css' %}" rel="stylesheet" />
+
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet" />
+
+    <link href="{% static 'css/flaticon.css' %}" rel="stylesheet" />
+
+    <link href="{% static 'css/owl.css' %}" rel="stylesheet" />
+
+    <link href="{% static 'css/jquery-ui.css' %}" rel="stylesheet" />
+
+    <link href="{% static 'css/jquery.fancybox.min.css' %}" rel="stylesheet" />
+
+    <link
+      href="{% static 'css/jquery.bootstrap-touchspin.css' %}"
+      rel="stylesheet"
+    />
+
+    <!--Color Themes-->
+    <link
+      id="theme-color-file"
+      href="{% static 'css/default-theme.css' %}"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="{% static 'img/favicon.png' %}"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="{% static 'img/favicon.png' %}"
+      type="image/x-icon"
+    />
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+    ><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!-- Preloader -->
+      <div class="preloader"></div>
+
+      <!-- Main Header-->
+      <header class="main-header">
+        <!-- Header Top -->
+        <div class="header-top">
+          <div class="auto-container">
+            <div class="top-outer clearfix">
+              <!--Top Left-->
+              <div class="top-left">
+                <ul class="links clearfix">
+                  <li>
+                    <a href="#"
+                      ><span class="icon flaticon-home-phone"></span>
+                      <strong>Make a call:</strong> +8 (321) 666-12-34</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="icon flaticon-location"></span>
+                      <strong>Visit us on:</strong> 217 Royal Garden, NY</a
+                    >
+                  </li>
+                </ul>
+                <ul class="social-icon-one">
+                  <li>
+                    <a href="#"><span class="fa fa-instgramk"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="fa fa-linkedin"></span></a>
+                  </li>
+                </ul>
+              </div>
+
+              <!--Top Right-->
+              <div class="top-right clearfix">
+                <ul class="clearfix">
+                  <li><a href="#">Cart: 0 item(s) - $0.00</a></li>
+                </ul>
+                <!--Search Box-->
+                <div class="search-box-outer">
+                  <div class="dropdown">
+                    <button
+                      class="search-box-btn dropdown-toggle"
+                      type="button"
+                      id="dropdownMenu3"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <span class="fa fa-search"></span>
+                    </button>
+                    <ul
+                      class="dropdown-menu pull-right search-panel"
+                      aria-labelledby="dropdownMenu3"
+                    >
+                      <li class="panel-outer">
+                        <div class="form-container">
+                          <form
+                            method="post"
+                            action="http://st.ourhtmldemo.com/template/Bruges/blog.html"
+                          >
+                            <div class="form-group">
+                              <input
+                                type="search"
+                                name="field-name"
+                                value=""
+                                placeholder="Search Here"
+                                required
+                              />
+                              <button type="submit" class="search-btn">
+                                <span class="fa fa-search"></span>
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Header Top End -->
+
+        <!-- Main Box -->
+        <div class="main-box">
+          <div class="auto-container">
+            <div class="outer-container clearfix">
+              <div class="border-box"></div>
+              <!--Logo Box-->
+              <div class="logo-box">
+                <div class="logo">
+                  <a href="index-2.html"
+                    ><img src="{% static 'img/logo.png' %}" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <!--Nav Outer-->
+              <div class="nav-outer clearfix">
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                  <div class="navbar-header">
+                    <!-- Toggle Button -->
+                    <button
+                      type="button"
+                      class="navbar-toggle"
+                      data-toggle="collapse"
+                      data-target=".navbar-collapse"
+                    >
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+
+                  <div class="navbar-collapse collapse clearfix">
+                    <ul class="navigation clearfix">
+                      <li>
+                        <a href="#">Home</a>
+                        <!-- <ul>
+                          <li><a href="index-2.html">Homepage 01</a></li>
+                          <li><a href="index-3.html">Homepage 02</a></li>
+                          <li class="dropdown">
+                            <a href="#">Header Styles</a>
+                            <ul>
+                              <li>
+                                <a href="index-2.html">Header Style One</a>
+                              </li>
+                              <li>
+                                <a href="index-3.html">Header Style Two</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul> -->
+                      </li>
+                      <li>
+                        <a href="#">Services</a>
+                        <!-- <ul>
+                          <li><a href="services.html">View All Services</a></li>
+                          <li>
+                            <a href="residential-design.html"
+                              >Residential Design</a
+                            >
+                          </li>
+                          <li>
+                            <a href="industrial-design.html"
+                              >Industrial Design</a
+                            >
+                          </li>
+                          <li>
+                            <a href="restaurant-design.html"
+                              >Restaurant Design</a
+                            >
+                          </li>
+                          <li>
+                            <a href="commercial-design.html"
+                              >Commercial Design</a
+                            >
+                          </li>
+                          <li>
+                            <a href="corporate-design.html">Corporate Design</a>
+                          </li>
+                          <li>
+                            <a href="hospitality-design.html"
+                              >Hospitality Design</a
+                            >
+                          </li>
+                        </ul> -->
+                      </li>
+                      <li>
+                        <a href="#">About Us</a>
+                        <!-- <ul>
+                          <li><a href="about.html">About Our Company</a></li>
+                          <li><a href="press.html">Press Release</a></li>
+                          <li><a href="testimonial.html">Testimonials</a></li>
+                          <li><a href="faq.html">FAQ’s</a></li>
+                          <li><a href="catelogue.html">Catelogue</a></li>
+                          <li><a href="not-found.html">404 Page</a></li>
+                        </ul> -->
+                      </li>
+                      <li>
+                        <a href="#">Projects</a>
+                        <!-- <ul>
+                          <li class="dropdown">
+                            <a href="#">Grid View</a>
+                            <ul>
+                              <li>
+                                <a href="project-three-column.html"
+                                  >Project Three Column</a
+                                >
+                              </li>
+                              <li>
+                                <a href="project-four-column.html"
+                                  >Project Four Column</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="project-fullwidth.html"
+                              >Project Fullwidth</a
+                            >
+                          </li>
+                          <li><a href="project-modern.html">Modern View</a></li>
+                          <li>
+                            <a href="project-masonry.html">Project Masonry</a>
+                          </li>
+                          <li>
+                            <a href="project-single.html">Single Project</a>
+                          </li>
+                        </ul> -->
+                      </li>
+                      <li>
+                        <a href="#">Events</a>
+                        <!-- <ul>
+                          <li><a href="blog.html">Blog Default</a></li>
+                          <li>
+                            <a href="blog-large.html">Blog Large image</a>
+                          </li>
+                          <li><a href="blog-single.html">Single Post</a></li>
+                        </ul> -->
+                      </li>
+                      <!-- <li class="dropdown">
+                        <a href="#">Shop</a>
+                        <ul>
+                          <li><a href="shop.html">Shop Products</a></li>
+                          <li><a href="shop-single.html">Product Single</a></li>
+                          <li><a href="shoping-cart.html">Shopping Cart</a></li>
+                          <li><a href="checkout.html">Checkout</a></li>
+                          <li><a href="account.html">My account</a></li>
+                        </ul>
+                      </li> -->
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <!-- Main Menu End-->
+
+                <!--Outer Box-->
+                <div class="outer-box">
+                  <a href="catelogue.html" class="theme-btn catelogue-btn"
+                    >Catelogue <span class="icon"></span
+                  ></a>
+                </div>
+              </div>
+              <!--Nav Outer End-->
+            </div>
+          </div>
+        </div>
+
+        <!--Sticky Header-->
+        <div class="sticky-header">
+          <div class="auto-container">
+            <div class="outer-container clearfix">
+              <!--Logo Box-->
+              <div class="logo-box pull-left">
+                <div class="logo">
+                  <a href="index-2.html"
+                    ><img src="{% static 'img/logo-small.png' %}" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <!--Nav Outer-->
+              <div class="nav-outer clearfix">
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                  <div class="navbar-header">
+                    <!-- Toggle Button -->
+                    <button
+                      type="button"
+                      class="navbar-toggle"
+                      data-toggle="collapse"
+                      data-target=".navbar-collapse"
+                    >
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+
+                  <div class="navbar-collapse collapse clearfix">
+                    <ul class="navigation clearfix">
+                      <li>
+                        <a href="#">Home</a>
+                        <!-- <ul>
+                          <li><a href="index-2.html">Homepage 01</a></li>
+                          <li><a href="index-3.html">Homepage 02</a></li>
+                          <li class="dropdown">
+                            <a href="#">Header Styles</a>
+                            <ul>
+                              <li>
+                                <a href="index-2.html">Header Style One</a>
+                              </li>
+                              <li>
+                                <a href="index-3.html">Header Style Two</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul> -->
+                      </li>
+                      <li>
+                        <a href="#">Services</a>
+                        <!-- <ul>
+                          <li><a href="services.html">View All Services</a></li>
+                          <li>
+                            <a href="residential-design.html"
+                              >Residential Design</a
+                            >
+                          </li>
+                          <li>
+                            <a href="industrial-design.html"
+                              >Industrial Design</a
+                            >
+                          </li>
+                          <li>
+                            <a href="restaurant-design.html"
+                              >Restaurant Design</a
+                            >
+                          </li>
+                          <li>
+                            <a href="commercial-design.html"
+                              >Commercial Design</a
+                            >
+                          </li>
+                          <li>
+                            <a href="corporate-design.html">Corporate Design</a>
+                          </li>
+                          <li>
+                            <a href="hospitality-design.html"
+                              >Hospitality Design</a
+                            >
+                          </li>
+                        </ul> -->
+                      </li>
+                      <li>
+                        <a href="#">About Us</a>
+                        <!-- <ul>
+                          <li><a href="about.html">About Our Company</a></li>
+                          <li><a href="press.html">Press Release</a></li>
+                          <li><a href="testimonial.html">Testimonials</a></li>
+                          <li><a href="faq.html">FAQ’s</a></li>
+                          <li><a href="catelogue.html">Catelogue</a></li>
+                          <li><a href="not-found.html">404 Page</a></li>
+                        </ul> -->
+                      </li>
+                      <li>
+                        <a href="#">Projects</a>
+                        <!-- <ul>
+                          <li class="dropdown">
+                            <a href="#">Grid View</a>
+                            <ul>
+                              <li>
+                                <a href="project-three-column.html"
+                                  >Project Three Column</a
+                                >
+                              </li>
+                              <li>
+                                <a href="project-four-column.html"
+                                  >Project Four Column</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="project-fullwidth.html"
+                              >Project Fullwidth</a
+                            >
+                          </li>
+                          <li><a href="project-modern.html">Modern View</a></li>
+                          <li>
+                            <a href="project-masonry.html">Project Masonry</a>
+                          </li>
+                          <li>
+                            <a href="project-single.html">Single Project</a>
+                          </li>
+                        </ul> -->
+                      </li>
+                      <li>
+                        <a href="#">Events</a>
+                        <!-- <ul>
+                          <li><a href="blog.html">Blog Default</a></li>
+                          <li>
+                            <a href="blog-large.html">Blog Large image</a>
+                          </li>
+                          <li><a href="blog-single.html">Single Post</a></li>
+                        </ul> -->
+                      </li>
+                      <li>
+                        <!-- <a href="#">Shop</a> -->
+                        <!-- <ul>
+                          <li><a href="shop.html">Shop Products</a></li>
+                          <li><a href="shop-single.html">Product Single</a></li>
+                          <li><a href="shoping-cart.html">Shopping Cart</a></li>
+                          <li><a href="checkout.html">Checkout</a></li>
+                          <li><a href="account.html">My account</a></li>
+                        </ul> -->
+                      </li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <!-- Main Menu End-->
+              </div>
+              <!--Nav Outer End-->
+            </div>
+          </div>
+        </div>
+        <!--End Sticky Header-->
+      </header>
+      <!--End Main Header -->
+
+      <!--Page Title-->
+      <section
+        class="page-title"
+        style="background-image: url(images/background/3.jpg)"
+      >
+        <div class="auto-container">
+          <h1>Services</h1>
+          <ul class="page-breadcrumb">
+            <li><a href="index-2.html">Home</a></li>
+            <li>Services</li>
+          </ul>
+        </div>
+      </section>
+      <!--End Page Title-->
+
+      <!--Services Page Section-->
+      <section class="services-page-section">
+        <div class="auto-container">
+          <div class="row clearfix">
+            <!--Services Block-->
+            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <div class="inner-box">
+                <div class="image">
+                  <a href="residential-design.html"
+                    ><img src="images/resource/services-1.jpg" alt=""
+                  /></a>
+                  <div class="category">Residential Design</div>
+                </div>
+                <div class="lower-content">
+                  <div class="upper-box">
+                    <div class="text">
+                      Desires to obtain pain of itself, because it‘s but because
+                      occasionally.
+                    </div>
+                  </div>
+                  <div class="lower-box">
+                    <a href="residential-design.html" class="read-more"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Services Block-->
+            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <div class="inner-box">
+                <div class="image">
+                  <a href="industrial-design.html"
+                    ><img src="images/resource/services-2.jpg" alt=""
+                  /></a>
+                  <div class="category">Industrial Design</div>
+                </div>
+                <div class="lower-content">
+                  <div class="upper-box">
+                    <div class="text">
+                      Explain to you how this mistaken idea denouncing of
+                      pleasure.
+                    </div>
+                  </div>
+                  <div class="lower-box">
+                    <a href="industrial-design.html" class="read-more"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Services Block-->
+            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <div class="inner-box">
+                <div class="image">
+                  <a href="restaurant-design.html"
+                    ><img src="images/resource/services-3.jpg" alt=""
+                  /></a>
+                  <div class="category">Restaurant Design</div>
+                </div>
+                <div class="lower-content">
+                  <div class="upper-box">
+                    <div class="text">
+                      It is a long established fact that reader will be
+                      distracted looking.
+                    </div>
+                  </div>
+                  <div class="lower-box">
+                    <a href="restaurant-design.html" class="read-more"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Services Block-->
+            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <div class="inner-box">
+                <div class="image">
+                  <a href="commercial-design.html"
+                    ><img src="images/resource/services-4.jpg" alt=""
+                  /></a>
+                  <div class="category">Commercial Design</div>
+                </div>
+                <div class="lower-content">
+                  <div class="upper-box">
+                    <div class="text">
+                      Explain to you how this mistaken idea denouncing of
+                      pleasure.
+                    </div>
+                  </div>
+                  <div class="lower-box">
+                    <a href="commercial-design.html" class="read-more"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Services Block-->
+            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <div class="inner-box">
+                <div class="image">
+                  <a href="corporate-design.html"
+                    ><img src="images/resource/services-5.jpg" alt=""
+                  /></a>
+                  <div class="category">Corporate Design</div>
+                </div>
+                <div class="lower-content">
+                  <div class="upper-box">
+                    <div class="text">
+                      It is a long established fact that reader will be
+                      distracted looking.
+                    </div>
+                  </div>
+                  <div class="lower-box">
+                    <a href="corporate-design.html" class="read-more"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Services Block-->
+            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <div class="inner-box">
+                <div class="image">
+                  <a href="hospitality-design.html"
+                    ><img src="images/resource/services-6.jpg" alt=""
+                  /></a>
+                  <div class="category">Hospitality Design</div>
+                </div>
+                <div class="lower-content">
+                  <div class="upper-box">
+                    <div class="text">
+                      Desires to obtain pain of itself, because it‘s but because
+                      occasionally.
+                    </div>
+                  </div>
+                  <div class="lower-box">
+                    <a href="hospitality-design.html" class="read-more"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Services Page Section-->
+
+      <!--Call To Action-->
+      <section
+        class="call-to-action-section"
+        style="background-image: url(images/background/5.jpg)"
+      >
+        <div class="auto-container">
+          <h2>
+            Are you looking for professional interior workers for <br />
+            your commercial place?
+          </h2>
+          <div class="number">+8 (321) 666-12-34</div>
+        </div>
+      </section>
+      <!--End Call To Action-->
+
+      <!--Main Footer-->
+      <footer class="main-footer">
+        <div class="auto-container">
+          <!--Widgets Section-->
+          <div class="widgets-section">
+            <div class="row clearfix">
+              <!--Footer Column-->
+              <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                <div class="footer-widget logo-widget">
+                  <div class="logo">
+                    <a href="index-2.html"
+                      ><img src="images/footer-logo.png" alt=""
+                    /></a>
+                  </div>
+                  <h3>Main Branch</h3>
+                  <ul class="list clearfix">
+                    <li>
+                      DE 18 Tech Rd, Bridge <br />
+                      St, NY 1002, USA.
+                    </li>
+                    <li>
+                      +8 (321) 666-12-34 <br />
+                      Support@Bruges.com
+                    </li>
+                  </ul>
+                  <a href="#" class="branch">Contact Other Branches</a>
+
+                  <ul class="social-icon-two">
+                    <li class="share">We Are Social</li>
+                    <li>
+                      <a href="#"><span class="fa fa-facebook"></span></a>
+                    </li>
+                    <li>
+                      <a href="#"><span class="fa fa-twitter"></span></a>
+                    </li>
+                    <li>
+                      <a href="#"><span class="fa fa-google-plus"></span></a>
+                    </li>
+                    <li>
+                      <a href="#"><span class="fa fa-linkedin"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!--Footer Column-->
+              <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                <div class="footer-widget news-widget">
+                  <div class="footer-title">
+                    <h2>Latest News</h2>
+                  </div>
+                  <div class="widget-content">
+                    <!--News Widget Block-->
+                    <div class="news-widget-block">
+                      <div class="widget-inner">
+                        <div class="post-date">March 31, 2018</div>
+                        <h3>
+                          <a href="blog-single.html"
+                            >Special Message Regarding Mystery Shopper
+                            Programs.</a
+                          >
+                        </h3>
+                      </div>
+                    </div>
+
+                    <!--News Widget Block-->
+                    <div class="news-widget-block">
+                      <div class="widget-inner">
+                        <div class="post-date">March 06, 2018</div>
+                        <h3>
+                          <a href="blog-single.html"
+                            >More than 50 percent of the work we do today didnot
+                            exist.</a
+                          >
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="blog.html" class="more-news">More News</a>
+                </div>
+              </div>
+
+              <!--Footer Column-->
+              <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                <div class="footer-widget lists-widget">
+                  <div class="footer-title">
+                    <h2>Usefull Links</h2>
+                  </div>
+                  <div class="widget-content">
+                    <div class="row clearfix">
+                      <div class="column col-md-6 col-sm-6 col-xs-12">
+                        <ul class="footer-list">
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Our Services</a></li>
+                          <li><a href="#">Why Choose Us</a></li>
+                          <li><a href="#">Our Works</a></li>
+                          <li><a href="#">News & Updates</a></li>
+                          <li><a href="#">Get a Quote</a></li>
+                        </ul>
+                      </div>
+                      <div class="column col-md-6 col-sm-6 col-xs-12">
+                        <ul class="footer-list">
+                          <li><a href="#">Testimonials</a></li>
+                          <li><a href="#">FAQ’s</a></li>
+                          <li><a href="#">Pricing Plans</a></li>
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+          <div class="auto-container">
+            <div class="row clearfix">
+              <div class="column col-md-6 col-sm-12 col-xs-12">
+                <div class="copyright">
+                  Copyrights &copy; 2012-2018 <a href="#">Bruges.</a> All rights
+                  reserved.
+                </div>
+              </div>
+              <div class="link-column col-md-6 col-sm-12 col-xs-12">
+                <div class="go-to-top scroll-to-target" data-target="html">
+                  <span class="icon flaticon-arrows-9"></span
+                  ><span class="text-outer">Move to Top</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--End Main Footer-->
+    </div>
+    <!--End pagewrapper-->
+
+    <!-- Color Palate / Color Switcher -->
+    <div class="color-palate">
+      <div class="color-trigger">
+        <i class="fa fa-gear"></i>
+      </div>
+      <div class="color-palate-head">
+        <h6>Choose Your Color</h6>
+      </div>
+      <div class="various-color clearfix">
+        <div class="colors-list">
+          <span
+            class="palate default-color active"
+            data-theme-file="css/color-themes/default-theme.css"
+          ></span>
+          <span
+            class="palate teal-color"
+            data-theme-file="css/color-themes/teal-theme.css"
+          ></span>
+          <span
+            class="palate green-color"
+            data-theme-file="css/color-themes/green-theme.css"
+          ></span>
+          <span
+            class="palate navy-color"
+            data-theme-file="css/color-themes/navy-theme.css"
+          ></span>
+          <span
+            class="palate blue-color"
+            data-theme-file="css/color-themes/blue-theme.css"
+          ></span>
+          <span
+            class="palate orange-color"
+            data-theme-file="css/color-themes/orange-theme.css"
+          ></span>
+          <span
+            class="palate olive-color"
+            data-theme-file="css/color-themes/olive-theme.css"
+          ></span>
+          <span
+            class="palate red-color"
+            data-theme-file="css/color-themes/red-theme.css"
+          ></span>
+        </div>
+      </div>
+
+      <div class="palate-foo">
+        <span>You can easily change and switch the colors.</span>
+      </div>
+    </div>
+    <!-- /.End Of Color Palate -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <!--Revolution Slider-->
+    <script src="{% static 'js/jquery.themepunch.revolution.min.js' %}"></script>
+    <script src="{% static 'js/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'js/revolution.extension.actions.min.js' %}"></script>
+    <script src="{% static 'js/revolution.extension.carousel.min.js' %}"></script>
+    <script src="{% static 'js/revolution.extension.kenburn.min.js' %}"></script>
+    <script src="{% static 'js/revolution.extension.layeranimation.min.js' %}"></script>
+    <script src="{% static 'js/revolution.extension.migration.min.js' %}"></script>
+    <script src="{% static 'js/revolution.extension.navigation.min.js' %}"></script>
+    <script src="{% static 'js/revolution.extension.parallax.min.js' %}"></script>
+    <script src="{% static 'js/revolution.extension.slideanims.min.js' %}"></script>
+    <script src="{% static 'js/revolution.extension.video.min.js' %}"></script>
+    <script src="{% static 'js/main-slider-script.js' %}"></script>
+
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'js/owl.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/knob.js' %}"></script>
+    <script src="{% static 'js/appear.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+    <!--Color Switcher-->
+    <script src="{% static 'js/color-settings.js' %}"></script>
+  </body>
+
+  <!-- Mirrored from st.ourhtmldemo.com/template/Bruges/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Apr 2023 19:08:50 GMT -->
+</html>
