@@ -9,3 +9,15 @@ def index(request):
 
 def services(request):
     return render(request, 'services.html')
+
+
+def About(request):
+    return render(request, 'about.html')
+
+
+def contact(request):
+    return render(request, 'contact.html')
+
+
+def projects(request):
+    return render(request, 'projects.html')

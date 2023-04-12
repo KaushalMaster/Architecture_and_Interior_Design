@@ -83,7 +83,7 @@
 
   <body>
     <div class="page-wrapper">
-      <!-- Preloader -->
+           <!-- Preloader -->
       <!-- <div class="preloader"></div> -->
 
       <!-- Main Header-->
@@ -319,7 +319,7 @@
                           <li><a href="account.html">My account</a></li>
                         </ul>
                       </li> -->
-                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="{% url 'contact' %}">Contact</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -485,7 +485,7 @@
                           <li><a href="account.html">My account</a></li>
                         </ul> -->
                       </li>
-                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="{% url 'contact' %}">Contact</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -500,189 +500,275 @@
       <!--End Main Header -->
 
       <!--Page Title-->
-      <section class="page-title" style="background-image: url(images/2.jpg)">
+      <section
+        class="page-title"
+        style="background-image: url(images/background/3.jpg)"
+      >
         <div class="auto-container">
-          <h1>Services</h1>
+          <h1>Projects Fullwidth</h1>
           <ul class="page-breadcrumb">
-            <li><a href="{% url 'index' %}">Home</a></li>
-            <li>Services</li>
+            <li><a href="index-2.html">Home</a></li>
+            <li>Projects Fullwidth</li>
           </ul>
         </div>
       </section>
       <!--End Page Title-->
 
-      <!--Services Page Section-->
-      <section class="services-page-section">
-        <div class="auto-container">
-          <div class="row clearfix">
-            <!--Services Block-->
-            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      <!--Gallery Section-->
+      <section class="gallery-section full-width">
+        <!--MixitUp Galery-->
+        <div class="mixitup-gallery">
+          <div class="auto-container">
+            <!--Filter-->
+            <div class="filters text-center clearfix">
+              <ul class="filter-tabs filter-btns clearfix">
+                <li class="active filter" data-role="button" data-filter="all">
+                  View All
+                </li>
+                <li class="filter" data-role="button" data-filter=".commercial">
+                  Commercial
+                </li>
+                <li
+                  class="filter"
+                  data-role="button"
+                  data-filter=".residential"
+                >
+                  Residential
+                </li>
+                <li class="filter" data-role="button" data-filter=".corporate">
+                  Corporate
+                </li>
+                <li class="filter" data-role="button" data-filter=".restaurant">
+                  Restaurant
+                </li>
+                <li class="filter" data-role="button" data-filter=".industry">
+                  Industrial
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="filter-list clearfix">
+            <!--Project Block-->
+            <div
+              class="project-block mix all col-lg-4 col-md-6 col-sm-6 col-xs-12"
+            >
               <div class="inner-box">
                 <div class="image">
-                  <a href="residential-design.html"
-                    ><img src="{% static 'img/services-1.jpg' %}" alt=""
-                  /></a>
-                  <div class="category">Residential Design</div>
+                  <img src="{% static 'img/project-5.jpg' %}" alt="" />
                 </div>
-                <div class="lower-content">
-                  <div class="upper-box">
-                    <div class="text">
-                      Desires to obtain pain of itself, because it‘s but because
-                      occasionally.
-                    </div>
+                <div class="overlay-box">
+                  <div class="category">
+                    <span class="icon flaticon-hotel-1"></span> Residential
                   </div>
-                  <div class="lower-box">
-                    <a href="residential-design.html" class="read-more"
-                      >Read More</a
-                    >
+                  <div class="content">
+                    <h2>Modern Living Room</h2>
+                    <a href="project-single.html" class="link-box"
+                      >Must explain to you how all this idea...
+                      <span class="icon"></span
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!--Services Block-->
-            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <!--Project Block-->
+            <div
+              class="project-block mix all corporate col-lg-4 col-md-6 col-sm-6 col-xs-12"
+            >
               <div class="inner-box">
                 <div class="image">
-                  <a href="industrial-design.html"
-                    ><img src="{% static 'img/services-2.jpg' %}" alt=""
-                  /></a>
-                  <div class="category">Industrial Design</div>
+                  <img src="{% static 'img/project-6.jpg' %}" alt="" />
                 </div>
-                <div class="lower-content">
-                  <div class="upper-box">
-                    <div class="text">
-                      Explain to you how this mistaken idea denouncing of
-                      pleasure.
-                    </div>
+                <div class="overlay-box">
+                  <div class="category">
+                    <span class="icon flaticon-online-store"></span> Commercial
                   </div>
-                  <div class="lower-box">
-                    <a href="industrial-design.html" class="read-more"
-                      >Read More</a
-                    >
+                  <div class="content">
+                    <h2>Modern Commercial Building</h2>
+                    <a href="project-single.html" class="link-box"
+                      >Must explain to you how all this idea...
+                      <span class="icon"></span
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!--Services Block-->
-            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <!--Project Block-->
+            <div
+              class="project-block mix all restaurant commercial col-lg-4 col-md-6 col-sm-6 col-xs-12"
+            >
               <div class="inner-box">
                 <div class="image">
-                  <a href="restaurant-design.html"
-                    ><img src="{% static 'img/services-3.jpg' %}" alt=""
-                  /></a>
-                  <div class="category">Restaurant Design</div>
+                  <img src="{% static 'img/project-7.jpg' %}" alt="" />
                 </div>
-                <div class="lower-content">
-                  <div class="upper-box">
-                    <div class="text">
-                      It is a long established fact that reader will be
-                      distracted looking.
-                    </div>
+                <div class="overlay-box">
+                  <div class="category">
+                    <span class="icon flaticon-hotel-1"></span> Residential
                   </div>
-                  <div class="lower-box">
-                    <a href="restaurant-design.html" class="read-more"
-                      >Read More</a
-                    >
+                  <div class="content">
+                    <h2>Wooden Small House</h2>
+                    <a href="project-single.html" class="link-box"
+                      >Must explain to you how all this idea...
+                      <span class="icon"></span
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!--Services Block-->
-            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <!--Project Block-->
+            <div
+              class="project-block mix all industry residential col-lg-4 col-md-6 col-sm-6 col-xs-12"
+            >
               <div class="inner-box">
                 <div class="image">
-                  <a href="commercial-design.html"
-                    ><img src="{% static 'img/services-4.jpg' %}" alt=""
-                  /></a>
-                  <div class="category">Commercial Design</div>
+                  <img src="{% static 'img/project-8.jpg' %}" alt="" />
                 </div>
-                <div class="lower-content">
-                  <div class="upper-box">
-                    <div class="text">
-                      Explain to you how this mistaken idea denouncing of
-                      pleasure.
-                    </div>
+                <div class="overlay-box">
+                  <div class="category">
+                    <span class="icon flaticon-residential-block"></span>
+                    Restaurant
                   </div>
-                  <div class="lower-box">
-                    <a href="commercial-design.html" class="read-more"
-                      >Read More</a
-                    >
+                  <div class="content">
+                    <h2>Koubba Luxury Bar</h2>
+                    <a href="project-single.html" class="link-box"
+                      >Must explain to you how all this idea...
+                      <span class="icon"></span
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!--Services Block-->
-            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <!--Project Block-->
+            <div
+              class="project-block mix all commercial industry col-lg-4 col-md-6 col-sm-6 col-xs-12"
+            >
               <div class="inner-box">
                 <div class="image">
-                  <a href="corporate-design.html"
-                    ><img src="{% static 'img/services-5.jpg' %}" alt=""
-                  /></a>
-                  <div class="category">Corporate Design</div>
+                  <img src="{% static 'img/project-9.jpg' %}" alt="" />
                 </div>
-                <div class="lower-content">
-                  <div class="upper-box">
-                    <div class="text">
-                      It is a long established fact that reader will be
-                      distracted looking.
-                    </div>
+                <div class="overlay-box">
+                  <div class="category">
+                    <span class="icon flaticon-residential-block"></span>
+                    Commercial
                   </div>
-                  <div class="lower-box">
-                    <a href="corporate-design.html" class="read-more"
-                      >Read More</a
-                    >
+                  <div class="content">
+                    <h2>Lake Museum Biwa</h2>
+                    <a href="project-single.html" class="link-box"
+                      >Must explain to you how all this idea...
+                      <span class="icon"></span
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!--Services Block-->
-            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <!--Project Block-->
+            <div
+              class="project-block mix all residential col-lg-4 col-md-6 col-sm-6 col-xs-12"
+            >
               <div class="inner-box">
                 <div class="image">
-                  <a href="hospitality-design.html"
-                    ><img src="{% static 'img/services-6.jpg' %}" alt=""
-                  /></a>
-                  <div class="category">Hospitality Design</div>
+                  <img src="{% static 'img/groject-10.jpg' %}" alt="" />
                 </div>
-                <div class="lower-content">
-                  <div class="upper-box">
-                    <div class="text">
-                      Desires to obtain pain of itself, because it‘s but because
-                      occasionally.
-                    </div>
+                <div class="overlay-box">
+                  <div class="category">
+                    <span class="icon flaticon-hotel-1"></span> Residential
                   </div>
-                  <div class="lower-box">
-                    <a href="hospitality-design.html" class="read-more"
-                      >Read More</a
-                    >
+                  <div class="content">
+                    <h2>Wooden Small House</h2>
+                    <a href="project-single.html" class="link-box"
+                      >Must explain to you how all this idea...
+                      <span class="icon"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Project Block-->
+            <div
+              class="project-block mix all residential col-lg-4 col-md-6 col-sm-6 col-xs-12"
+            >
+              <div class="inner-box">
+                <div class="image">
+                  <img src="{% static 'img/groject-11.jpg' %}" alt="" />
+                </div>
+                <div class="overlay-box">
+                  <div class="category">
+                    <span class="icon flaticon-online-store"></span> Commercial
+                  </div>
+                  <div class="content">
+                    <h2>Lake Museum Biwa</h2>
+                    <a href="project-single.html" class="link-box"
+                      >Must explain to you how all this idea...
+                      <span class="icon"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Project Block-->
+            <div
+              class="project-block mix all residential col-lg-4 col-md-6 col-sm-6 col-xs-12"
+            >
+              <div class="inner-box">
+                <div class="image">
+                  <img src="{% static 'img/groject-12.jpg' %}" alt="" />
+                </div>
+                <div class="overlay-box">
+                  <div class="category">
+                    <span class="icon flaticon-hotel-1"></span> Residential
+                  </div>
+                  <div class="content">
+                    <h2>Wooden Small House</h2>
+                    <a href="project-single.html" class="link-box"
+                      >Must explain to you how all this idea...
+                      <span class="icon"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Project Block-->
+            <div
+              class="project-block mix all industry residential col-lg-4 col-md-6 col-sm-6 col-xs-12"
+            >
+              <div class="inner-box">
+                <div class="image">
+                  <img src="{% static 'img/groject-13.jpg' %}" alt="" />
+                </div>
+                <div class="overlay-box">
+                  <div class="category">
+                    <span class="icon flaticon-residential-block"></span>
+                    Restaurant
+                  </div>
+                  <div class="content">
+                    <h2>Koubba Luxury Bar</h2>
+                    <a href="project-single.html" class="link-box"
+                      >Must explain to you how all this idea...
+                      <span class="icon"></span
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!--End Services Page Section-->
 
-      <!--Call To Action-->
-      <section
-        class="call-to-action-section"
-        style="background-image: url(images/background/5.jpg)"
-      >
-        <div class="auto-container">
-          <h2>
-            Are you looking for professional interior workers for <br />
-            your commercial place?
-          </h2>
-          <div class="number">+8 (321) 666-12-34</div>
+          <div class="btn-box text-center">
+            <a href="#" class="theme-btn btn-style-two">Load More</a>
+          </div>
         </div>
       </section>
-      <!--End Call To Action-->
+      <!--End Gallery Section-->
+
+
+   <!--Main Footer-->
 
       <footer class="main-footer">
         <div class="auto-container">
@@ -779,21 +865,28 @@
                     <div class="row clearfix">
                       <div class="column col-md-6 col-sm-6 col-xs-12">
                         <ul class="footer-list">
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">Our Services</a></li>
-                          <li><a href="#">Why Choose Us</a></li>
+                          <li><a href="{% url 'About' %}">About Us</a></li>
+                          <li>
+                            <a href="{% url 'services' %}">Our Services</a>
+                          </li>
+                          <li><a href="{% url 'About' %}">Why Choose Us</a></li>
                           <li><a href="#">Our Works</a></li>
-                          <li><a href="#">News & Updates</a></li>
-                          <li><a href="#">Get a Quote</a></li>
+                          <li><a href="#">Events</a></li>
                         </ul>
                       </div>
                       <div class="column col-md-6 col-sm-6 col-xs-12">
                         <ul class="footer-list">
-                          <li><a href="#">Testimonials</a></li>
-                          <li><a href="#">FAQ’s</a></li>
-                          <li><a href="#">Pricing Plans</a></li>
-                          <li><a href="#">Contact Us</a></li>
-                          <li><a href="#">Privacy Policy</a></li>
+                          <li>
+                            <a href="{% url 'contact' %}">Testimonials</a>
+                          </li>
+                          <li><a href="{% url 'contact' %}">FAQ’s</a></li>
+                          <li>
+                            <a href="{% url 'contact' %}">Pricing Plans</a>
+                          </li>
+                          <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                          <li>
+                            <a href="{% url 'contact' %}">Privacy Policy</a>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -904,7 +997,4 @@
 
     <!--Color Switcher-->
     <script src="{% static 'js/color-settings.js' %}"></script>
-  </body>
-
-
 </html>

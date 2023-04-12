@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-  
   <head>
     <meta charset="utf-8" />
     <title>InspiredRoom - Interior and Architecture Design PDEU</title>
@@ -206,7 +205,7 @@
                   <div class="navbar-collapse collapse clearfix">
                     <ul class="navigation clearfix">
                       <li>
-                        <a href="#">Home</a>
+                        <a href="{% url 'index' %}">Home</a>
                         <!-- <ul>
                           <li><a href="index-2.html">Homepage 01</a></li>
                           <li><a href="index-3.html">Homepage 02</a></li>
@@ -224,7 +223,7 @@
                         </ul> -->
                       </li>
                       <li>
-                        <a href="#">Services</a>
+                        <a href="{% url 'services' %}">Services</a>
                         <!-- <ul>
                           <li><a href="services.html">View All Services</a></li>
                           <li>
@@ -258,7 +257,7 @@
                         </ul> -->
                       </li>
                       <li>
-                        <a href="#">About Us</a>
+                        <a href="{% url 'About' %}">About Us</a>
                         <!-- <ul>
                           <li><a href="about.html">About Our Company</a></li>
                           <li><a href="press.html">Press Release</a></li>
@@ -320,7 +319,7 @@
                           <li><a href="account.html">My account</a></li>
                         </ul>
                       </li> -->
-                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="{% url 'contact' %}">Contact</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -372,7 +371,7 @@
                   <div class="navbar-collapse collapse clearfix">
                     <ul class="navigation clearfix">
                       <li>
-                        <a href="#">Home</a>
+                        <a href="{% url 'index' %}">Home</a>
                         <!-- <ul>
                           <li><a href="index-2.html">Homepage 01</a></li>
                           <li><a href="index-3.html">Homepage 02</a></li>
@@ -390,7 +389,7 @@
                         </ul> -->
                       </li>
                       <li>
-                        <a href="#">Services</a>
+                        <a href="{% url 'services' %}">Services</a>
                         <!-- <ul>
                           <li><a href="services.html">View All Services</a></li>
                           <li>
@@ -424,7 +423,7 @@
                         </ul> -->
                       </li>
                       <li>
-                        <a href="#">About Us</a>
+                        <a href="{% url 'About' %}">About Us</a>
                         <!-- <ul>
                           <li><a href="about.html">About Our Company</a></li>
                           <li><a href="press.html">Press Release</a></li>
@@ -486,7 +485,7 @@
                           <li><a href="account.html">My account</a></li>
                         </ul> -->
                       </li>
-                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="{% url 'contact' %}">Contact</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -2037,6 +2036,4 @@
     <!--Color Switcher-->
     <script src="{% static 'js/color-settings.js' %}"></script>
   </body>
-
-  <!-- Mirrored from st.ourhtmldemo.com/template/Bruges/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Apr 2023 19:06:57 GMT -->
 </html>
