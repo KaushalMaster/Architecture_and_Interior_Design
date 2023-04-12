@@ -41,3 +41,11 @@ def restaurant_design(request):
 
 def industrial_design(request):
     return render(request, 'industrial-design.html')
+
+
+def corporate_design(request):
+    return render(request, 'corporate-design.html')
+
+
+def hospitality_design(request):
+    return render(request, 'hospitality-design.html')
