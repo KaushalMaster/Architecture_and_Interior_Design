@@ -21,3 +21,23 @@ def contact(request):
 
 def projects(request):
     return render(request, 'projects.html')
+
+
+def catelogue(request):
+    return render(request, 'catelogue.html')
+
+
+def commercial_design(request):
+    return render(request, 'commercial-design.html')
+
+
+def residential_design(request):
+    return render(request, 'residential-design.html')
+
+
+def restaurant_design(request):
+    return render(request, 'restaurant-design.html')
+
+
+def industrial_design(request):
+    return render(request, 'industrial-design.html')

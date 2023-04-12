@@ -88,6 +88,11 @@
 
       <!-- Main Header-->
       <header class="main-header">
+        <!-- Preloader -->
+      <!-- <div class="preloader"></div> -->
+
+      <!-- Main Header-->
+      <header class="main-header">
         <!-- Header Top -->
         <div class="header-top">
           <div class="auto-container">
@@ -104,8 +109,7 @@
                   <li>
                     <a href="#"
                       ><span class="icon flaticon-location"></span>
-                      <strong>Visit us on:</strong> Pandit Deendayal Energy
-                      University, Gandhinagar</a
+                      <strong>Visit us on:</strong> Pandit Deendayal Energy University, Gandhinagar</a
                     >
                   </li>
                 </ul>
@@ -500,191 +504,88 @@
       </header>
       <!--End Main Header -->
 
+
       <!--Page Title-->
-      <section class="page-title" style="background-image: url(images/2.jpg)">
+      <section
+        class="page-title"
+        style="background-image: url(images/background/3.jpg)"
+      >
         <div class="auto-container">
-          <h1>Our Projects</h1>
+          <h1>Our Catelogue</h1>
           <ul class="page-breadcrumb">
             <li><a href="{% url 'index' %}">Home</a></li>
-            <li>Projects</li>
+            <li>Our Catelogue</li>
           </ul>
         </div>
       </section>
       <!--End Page Title-->
 
-      <!--Services Page Section-->
-      <section class="services-page-section">
+      <!--Catelogue Section-->
+      <section class="catelogue-section">
         <div class="auto-container">
-          <div class="row clearfix">
-            <!--Services Block-->
-            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
-              <div class="inner-box">
-                <div class="image">
-                  <a href="residential-design.html"
-                    ><img src="{% static 'img/services-1.jpg' %}" alt=""
-                  /></a>
-                  <div class="category">Residential Design</div>
-                </div>
-                <div class="lower-content">
-                  <div class="upper-box">
-                    <div class="text">
-                      Desires to obtain pain of itself, because it‘s but because
-                      occasionally.
-                    </div>
-                  </div>
-                  <div class="lower-box">
-                    <a href="residential-design.html" class="read-more"
-                      >Read More</a
-                    >
+          <div class="inner-container">
+            <!--Video Boxed-->
+            <div class="video-boxed">
+              <div class="single-item-carousel owl-carousel owl-theme">
+                <div class="slide">
+                  <div class="image">
+                    <img src="{% static 'img/video-img-4.jpg' %}" alt="" />
+                    <a
+                      href="https://www.youtube.com/watch?v=Viwfx0DtjHE"
+                      class="lightbox-image overlay-link"
+                      data-fancybox="images"
+                      data-caption=""
+                      ><div class="icon">
+                        <span class="flaticon-play-button"></span></div
+                    ></a>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <!--Services Block-->
-            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
-              <div class="inner-box">
-                <div class="image">
-                  <a href="industrial-design.html"
-                    ><img src="{% static 'img/services-2.jpg' %}" alt=""
-                  /></a>
-                  <div class="category">Industrial Design</div>
-                </div>
-                <div class="lower-content">
-                  <div class="upper-box">
-                    <div class="text">
-                      Explain to you how this mistaken idea denouncing of
-                      pleasure.
-                    </div>
+                <div class="slide">
+                  <div class="image">
+                    <img src="{% static 'img/video-img-5.jpg' %}" alt="" />
+                    <a
+                      href="https://www.youtube.com/watch?v=yUK-QIQDP0g"
+                      class="lightbox-image overlay-link"
+                      data-fancybox="images"
+                      data-caption=""
+                      ><div class="icon">
+                        <span class="flaticon-play-button"></span></div
+                    ></a>
                   </div>
-                  <div class="lower-box">
-                    <a href="industrial-design.html" class="read-more"
-                      >Read More</a
-                    >
+                </div>
+                <div class="slide">
+                  <div class="image">
+                    <img src="{% static 'img/video-img-6.jpg' %}" alt="" />
+                    <a
+                      href="https://www.youtube.com/watch?v=6WoGJGwiFT0"
+                      class="lightbox-image overlay-link"
+                      data-fancybox="images"
+                      data-caption=""
+                      ><div class="icon">
+                        <span class="flaticon-play-button"></span></div
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!--Services Block-->
-            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
-              <div class="inner-box">
-                <div class="image">
-                  <a href="restaurant-design.html"
-                    ><img src="{% static 'img/services-3.jpg' %}" alt=""
-                  /></a>
-                  <div class="category">Restaurant Design</div>
-                </div>
-                <div class="lower-content">
-                  <div class="upper-box">
-                    <div class="text">
-                      It is a long established fact that reader will be
-                      distracted looking.
-                    </div>
-                  </div>
-                  <div class="lower-box">
-                    <a href="restaurant-design.html" class="read-more"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--Services Block-->
-            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
-              <div class="inner-box">
-                <div class="image">
-                  <a href="commercial-design.html"
-                    ><img src="{% static 'img/services-4.jpg' %}" alt=""
-                  /></a>
-                  <div class="category">Commercial Design</div>
-                </div>
-                <div class="lower-content">
-                  <div class="upper-box">
-                    <div class="text">
-                      Explain to you how this mistaken idea denouncing of
-                      pleasure.
-                    </div>
-                  </div>
-                  <div class="lower-box">
-                    <a href="commercial-design.html" class="read-more"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--Services Block-->
-            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
-              <div class="inner-box">
-                <div class="image">
-                  <a href="corporate-design.html"
-                    ><img src="{% static 'img/services-5.jpg' %}" alt=""
-                  /></a>
-                  <div class="category">Corporate Design</div>
-                </div>
-                <div class="lower-content">
-                  <div class="upper-box">
-                    <div class="text">
-                      It is a long established fact that reader will be
-                      distracted looking.
-                    </div>
-                  </div>
-                  <div class="lower-box">
-                    <a href="corporate-design.html" class="read-more"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--Services Block-->
-            <div class="services-block col-lg-4 col-md-6 col-sm-6 col-xs-12">
-              <div class="inner-box">
-                <div class="image">
-                  <a href="hospitality-design.html"
-                    ><img src="{% static 'img/services-6.jpg' %}" alt=""
-                  /></a>
-                  <div class="category">Hospitality Design</div>
-                </div>
-                <div class="lower-content">
-                  <div class="upper-box">
-                    <div class="text">
-                      Desires to obtain pain of itself, because it‘s but because
-                      occasionally.
-                    </div>
-                  </div>
-                  <div class="lower-box">
-                    <a href="hospitality-design.html" class="read-more"
-                      >Read More</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ul class="video-options">
+              <li>
+                <a href="#"><span class="icon flaticon-share"></span> Share</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="icon flaticon-download-arrow-1"></span>
+                  Download</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-      <!--End Services Page Section-->
+      <!--End Catelogue Section-->
 
-      <!--Call To Action-->
-      <section
-        class="call-to-action-section"
-        style="background-image: url(images/background/5.jpg)"
-      >
-        <div class="auto-container">
-          <h2>
-            Are you looking for professional interior workers for <br />
-            your commercial place?
-          </h2>
-          <div class="number">+8 (321) 666-12-34</div>
-        </div>
-      </section>
-      <!--End Call To Action-->
-
+      <!--Main Footer-->
       <footer class="main-footer">
         <div class="auto-container">
           <!--Widgets Section-->
@@ -780,12 +681,13 @@
                     <div class="row clearfix">
                       <div class="column col-md-6 col-sm-6 col-xs-12">
                         <ul class="footer-list">
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">Our Services</a></li>
-                          <li><a href="#">Why Choose Us</a></li>
-                          <li><a href="#">Our Works</a></li>
-                          <li><a href="#">News & Updates</a></li>
-                          <li><a href="#">Get a Quote</a></li>
+                          <li><a href="{% url 'About' %}">About Us</a></li>
+                          <li>
+                            <a href="{% url 'services' %}">Our Services</a>
+                          </li>
+                          <li><a href="{% url 'About' %}">Why Choose Us</a></li>
+                          <li><a href="{% url 'projects' %}">Our Works</a></li>
+                          <li><a href="{% url 'contact' %}">Events</a></li>
                         </ul>
                       </div>
                       <div class="column col-md-6 col-sm-6 col-xs-12">
@@ -912,4 +814,6 @@
     <!--Color Switcher-->
     <script src="{% static 'js/color-settings.js' %}"></script>
   </body>
+
+
 </html>
