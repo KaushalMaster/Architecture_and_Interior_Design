@@ -88,11 +88,6 @@
 
       <!-- Main Header-->
       <header class="main-header">
-        <!-- Preloader -->
-      <!-- <div class="preloader"></div> -->
-
-      <!-- Main Header-->
-      <header class="main-header">
         <!-- Header Top -->
         <div class="header-top">
           <div class="auto-container">
@@ -109,7 +104,8 @@
                   <li>
                     <a href="#"
                       ><span class="icon flaticon-location"></span>
-                      <strong>Visit us on:</strong> Pandit Deendayal Energy University, Gandhinagar</a
+                      <strong>Visit us on:</strong> Pandit Deendayal Energy
+                      University, Gandhinagar</a
                     >
                   </li>
                 </ul>
@@ -125,9 +121,9 @@
 
               <!--Top Right-->
               <div class="top-right clearfix">
-                <ul class="clearfix">
+                <!-- <ul class="clearfix">
                   <li><a href="#">Cart: 0 item(s) - $0.00</a></li>
-                </ul>
+                </ul> -->
                 <!--Search Box-->
                 <div class="search-box-outer">
                   <div class="dropdown">
@@ -184,7 +180,10 @@
               <div class="logo-box">
                 <div class="logo">
                   <a href="{% url 'index' %}"
-                    ><img src="{% static 'img/logo.png' %}" alt=""
+                    ><img
+                      src="{% static 'img/logo_inspire.jpeg' %}"
+                      alt=""
+                      width="60"
                   /></a>
                 </div>
               </div>
@@ -332,7 +331,9 @@
 
                 <!--Outer Box-->
                 <div class="outer-box">
-                  <a href="catelogue.html" class="theme-btn catelogue-btn"
+                  <a
+                    href="{% url 'catelogue' %}"
+                    class="theme-btn catelogue-btn"
                     >Catelogue <span class="icon"></span
                   ></a>
                 </div>
@@ -350,7 +351,10 @@
               <div class="logo-box pull-left">
                 <div class="logo">
                   <a href="{% url 'index' %}"
-                    ><img src="{% static 'img/logo-small.png' %}" alt=""
+                    ><img
+                      src="{% static 'img/logo_inspire.jpeg' %}"
+                      alt=""
+                      width="50"
                   /></a>
                 </div>
               </div>
@@ -504,7 +508,6 @@
       </header>
       <!--End Main Header -->
 
-
       <!--Page Title-->
       <section
         class="page-title"
@@ -596,7 +599,10 @@
                 <div class="footer-widget logo-widget">
                   <div class="logo">
                     <a href="{% url 'index' %}"
-                      ><img src="{% static 'img/footer-logo.png' %}" alt=""
+                      ><img
+                        src="{% static 'img/logo_inspire.jpeg' %}"
+                        alt=""
+                        width="180"
                     /></a>
                   </div>
                   <h3>Main Branch</h3>
@@ -617,7 +623,9 @@
                     <li>
                       <a
                         href="https://www.instagram.com/the_inspired_room.pdeu/"
-                        >Instagram</a>
+                      >
+                        Instagram
+                      </a>
                     </li>
                     <!-- <li>
                       <a href="#"><span class="fa fa-twitter"></span></a>
@@ -625,7 +633,6 @@
                     <!-- <li>
                       <a href="#"><span class="fa fa-google-plus"></span></a>
                     </li> -->
-                    
                   </ul>
                 </div>
               </div>
@@ -678,28 +685,21 @@
                     <div class="row clearfix">
                       <div class="column col-md-6 col-sm-6 col-xs-12">
                         <ul class="footer-list">
-                          <li><a href="{% url 'About' %}">About Us</a></li>
-                          <li>
-                            <a href="{% url 'services' %}">Our Services</a>
-                          </li>
-                          <li><a href="{% url 'About' %}">Why Choose Us</a></li>
-                          <li><a href="{% url 'projects' %}">Our Works</a></li>
-                          <li><a href="{% url 'contact' %}">Events</a></li>
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Our Services</a></li>
+                          <li><a href="#">Why Choose Us</a></li>
+                          <li><a href="#">Our Works</a></li>
+                          <li><a href="#">News & Updates</a></li>
+                          <li><a href="#">Get a Quote</a></li>
                         </ul>
                       </div>
                       <div class="column col-md-6 col-sm-6 col-xs-12">
                         <ul class="footer-list">
-                          <li>
-                            <a href="{% url 'contact' %}">Testimonials</a>
-                          </li>
-                          <li><a href="{% url 'contact' %}">FAQ’s</a></li>
-                          <li>
-                            <a href="{% url 'contact' %}">Pricing Plans</a>
-                          </li>
-                          <li><a href="{% url 'contact' %}">Contact Us</a></li>
-                          <li>
-                            <a href="{% url 'contact' %}">Privacy Policy</a>
-                          </li>
+                          <li><a href="#">Testimonials</a></li>
+                          <li><a href="#">FAQ’s</a></li>
+                          <li><a href="#">Pricing Plans</a></li>
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">Privacy Policy</a></li>
                         </ul>
                       </div>
                     </div>
@@ -737,7 +737,7 @@
     <!-- Color Palate / Color Switcher -->
     <div class="color-palate">
       <div class="color-trigger">
-        <i class="fa fa-gear"></i>
+        <!-- <i class="fa fa-gear"></i> -->
       </div>
       <div class="color-palate-head">
         <h6>Choose Your Color</h6>
@@ -784,6 +784,7 @@
       </div>
     </div>
     <!-- /.End Of Color Palate -->
+
     <script src="{% static 'js/jquery.js' %}"></script>
     <!--Revolution Slider-->
     <script src="{% static 'js/jquery.themepunch.revolution.min.js' %}"></script>
@@ -811,6 +812,4 @@
     <!--Color Switcher-->
     <script src="{% static 'js/color-settings.js' %}"></script>
   </body>
-
-
 </html>

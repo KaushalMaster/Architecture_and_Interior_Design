@@ -87,7 +87,7 @@
 
   <body>
     <div class="page-wrapper">
-      <!-- Preloader -->
+           <!-- Preloader -->
       <!-- <div class="preloader"></div> -->
 
       <!-- Main Header-->
@@ -102,7 +102,7 @@
                   <li>
                     <a href="#"
                       ><span class="icon flaticon-home-phone"></span>
-                      <strong>Make a call:</strong> +91 (321) 666-12-34</a
+                      <strong>Make a call:</strong> +8 (321) 666-12-34</a
                     >
                   </li>
                   <li>
@@ -125,9 +125,9 @@
 
               <!--Top Right-->
               <div class="top-right clearfix">
-                <ul class="clearfix">
+                <!-- <ul class="clearfix">
                   <li><a href="#">Cart: 0 item(s) - $0.00</a></li>
-                </ul>
+                </ul> -->
                 <!--Search Box-->
                 <div class="search-box-outer">
                   <div class="dropdown">
@@ -184,7 +184,10 @@
               <div class="logo-box">
                 <div class="logo">
                   <a href="{% url 'index' %}"
-                    ><img src="{% static 'img/logo.png' %}" alt=""
+                    ><img
+                      src="{% static 'img/logo_inspire.jpeg' %}"
+                      alt=""
+                      width="60"
                   /></a>
                 </div>
               </div>
@@ -332,7 +335,9 @@
 
                 <!--Outer Box-->
                 <div class="outer-box">
-                  <a href="catelogue.html" class="theme-btn catelogue-btn"
+                  <a
+                    href="{% url 'catelogue' %}"
+                    class="theme-btn catelogue-btn"
                     >Catelogue <span class="icon"></span
                   ></a>
                 </div>
@@ -350,7 +355,10 @@
               <div class="logo-box pull-left">
                 <div class="logo">
                   <a href="{% url 'index' %}"
-                    ><img src="{% static 'img/logo-small.png' %}" alt=""
+                    ><img
+                      src="{% static 'img/logo_inspire.jpeg' %}"
+                      alt=""
+                      width="50"
                   /></a>
                 </div>
               </div>
@@ -1597,7 +1605,7 @@
     </div>
     <!-- /.End Of Color Palate -->
 
-    
+      <!--Main Footer-->
       <footer class="main-footer">
         <div class="auto-container">
           <!--Widgets Section-->
@@ -1608,7 +1616,10 @@
                 <div class="footer-widget logo-widget">
                   <div class="logo">
                     <a href="{% url 'index' %}"
-                      ><img src="{% static 'img/footer-logo.png' %}" alt=""
+                      ><img
+                        src="{% static 'img/logo_inspire.jpeg' %}"
+                        alt=""
+                        width="180"
                     /></a>
                   </div>
                   <h3>Main Branch</h3>
@@ -1629,19 +1640,15 @@
                     <li>
                       <a
                         href="https://www.instagram.com/the_inspired_room.pdeu/"
-                        >
+                      >
                         Instagram
-                    <!-- <i class="fa fa-instagram" aria-hidden="true">Instagram</i> -->
-                    </a>
+                      </a>
                     </li>
                     <!-- <li>
                       <a href="#"><span class="fa fa-twitter"></span></a>
                     </li> -->
                     <!-- <li>
                       <a href="#"><span class="fa fa-google-plus"></span></a>
-                    </li> -->
-                    <!-- <li>
-                      <a href="#"><span class="fa fa-linkedin"></span></a>
                     </li> -->
                   </ul>
                 </div>
@@ -1747,7 +1754,7 @@
     <!-- Color Palate / Color Switcher -->
     <div class="color-palate">
       <div class="color-trigger">
-        <i class="fa fa-gear"></i>
+        <!-- <i class="fa fa-gear"></i> -->
       </div>
       <div class="color-palate-head">
         <h6>Choose Your Color</h6>
@@ -1794,6 +1801,7 @@
       </div>
     </div>
     <!-- /.End Of Color Palate -->
+
     <script src="{% static 'js/jquery.js' %}"></script>
     <!--Revolution Slider-->
     <script src="{% static 'js/jquery.themepunch.revolution.min.js' %}"></script>

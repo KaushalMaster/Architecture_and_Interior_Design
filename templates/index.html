@@ -121,9 +121,9 @@
 
               <!--Top Right-->
               <div class="top-right clearfix">
-                <ul class="clearfix">
+                <!-- <ul class="clearfix">
                   <li><a href="#">Cart: 0 item(s) - $0.00</a></li>
-                </ul>
+                </ul> -->
                 <!--Search Box-->
                 <div class="search-box-outer">
                   <div class="dropdown">
@@ -1174,7 +1174,9 @@
           </div>
 
           <div class="btn-box text-center">
-            <a href="services.html" class="theme-btn btn-style-two">View all</a>
+            <a href="{% url 'services' %}" class="theme-btn btn-style-two"
+              >View all</a
+            >
           </div>
         </div>
       </div>
@@ -1373,7 +1375,7 @@
           </div>
 
           <div class="btn-box text-center">
-            <a href="project-fullwidth.html" class="theme-btn btn-style-two"
+            <a href="{% url 'projects' %}" class="theme-btn btn-style-two"
               >View all</a
             >
           </div>
@@ -1761,7 +1763,7 @@
                     </div>
                   </div>
 
-                  <a href="project-grid.html" class="theme-btn btn-style-two"
+                  <a href="{% url 'contact' %}" class="theme-btn btn-style-two"
                     >Start Your Project</a
                   >
                 </div>
@@ -1836,7 +1838,7 @@
                       ><img
                         src="{% static 'img/logo_inspire.jpeg' %}"
                         alt=""
-                        width="80"
+                        width="180"
                     /></a>
                   </div>
                   <h3>Main Branch</h3>
