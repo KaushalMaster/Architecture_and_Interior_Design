@@ -1929,12 +1929,18 @@
                     <div class="row clearfix">
                       <div class="column col-md-6 col-sm-6 col-xs-12">
                         <ul class="footer-list">
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">Our Services</a></li>
-                          <li><a href="#">Why Choose Us</a></li>
-                          <li><a href="#">Our Works</a></li>
-                          <li><a href="#">News & Updates</a></li>
-                          <li><a href="#">Get a Quote</a></li>
+                          <li><a href="{% url 'About' %}">About Us</a></li>
+                          <li>
+                            <a href="{% url 'services' %}">Our Services</a>
+                          </li>
+                          <li>
+                            <a href="{% url 'services' %}">Why Choose Us</a>
+                          </li>
+                          <li><a href="{% url 'services' %}">Our Works</a></li>
+                          <li>
+                            <a href="{% url 'contact' %}">News & Updates</a>
+                          </li>
+                          <li><a href="{% url 'contact' %}">Get a Quote</a></li>
                         </ul>
                       </div>
                       <div class="column col-md-6 col-sm-6 col-xs-12">
